@@ -26,7 +26,7 @@ italic_font                   Hack Italic
 bold_italic_font              Hack Bold Italic
 
 # Set font size
-font_size                     14.5
+font_size                     14.0
 
 # Disable font ligatures
 disable_ligatures             always
@@ -51,7 +51,7 @@ pointer_shape_when_dragging   hand
 # --- Mouse ---------------------------------------------------------------------------
 
 mouse_hide_wait               2.0
-# copy_on_select                clipboard
+copy_on_select                clipboard
 
 # --- Tabs ----------------------------------------------------------------------------
 
@@ -75,19 +75,15 @@ hide_window_decorations       no
 draw_minimal_borders          yes
 
 # MacOS specific options
-macos_titlebar_color          background
+# macos_titlebar_color          background
 macos_hide_from_tasks         no
 macos_traditional_fullscreen  no
 macos_custom_beam_cursor      yes
 macos_show_window_title_in    menubar
 
-# --- Keymaps -------------------------------------------------------------------------
-
 # Remap option to alt on mac
 macos_option_as_alt           yes
 map                           opt+3 send_text all #
-map                           cmd+c copy_to_clipboard
-map                           cmd+v paste_from_clipboard
 
 # --- Shortcuts -----------------------------------------------------------------------
 
@@ -105,3 +101,9 @@ open_url_with                 super
 # sync_to_monitor               yes
 
 # --- Fin -----------------------------------------------------------------------------
+
+
+# BEGIN_KITTY_THEME
+# Gruvbox Dark Hard
+include current-theme.conf
+# END_KITTY_THEME
